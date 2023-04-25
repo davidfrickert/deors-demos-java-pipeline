@@ -22,7 +22,8 @@ pipeline {
             steps {
                 script {
                     qualityGates = readYaml file: 'quality-gates.yaml'
-		    env.PATH = "/usr/bin:${env.PATH}"
+		    def dockerHome = tool 'docker'
+		    env.PATH = "${dockerHome}/bin:${env.PATH}"
                 }
             }
         }
