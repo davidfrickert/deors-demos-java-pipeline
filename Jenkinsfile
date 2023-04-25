@@ -154,4 +154,11 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            echo '-=- remove deployment -=-'
+            sh "docker stop ${TEST_CONTAINER_NAME}"
+        }
+    }
 }
