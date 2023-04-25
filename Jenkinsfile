@@ -22,6 +22,7 @@ pipeline {
             steps {
                 script {
                     qualityGates = readYaml file: 'quality-gates.yaml'
+		    env.PATH = "/usr/bin:${env.PATH}"
                 }
             }
         }
