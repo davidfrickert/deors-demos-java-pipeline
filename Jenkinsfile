@@ -8,7 +8,8 @@ pipeline {
     }
 
     environment {
-        APP_NAME = 'deors-demos-java-pipeline'
+      	ORG_NAME = 'davidfrickert'
+	APP_NAME = 'deors-demos-java-pipeline'
         APP_VERSION = '1.0-SNAPSHOT'
         APP_CONTEXT_ROOT = '/'
         APP_LISTENING_PORT = '8080'
