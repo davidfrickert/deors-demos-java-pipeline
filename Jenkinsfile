@@ -26,7 +26,7 @@ spec:
         runAsUser: 0
         privileged: true
     - name: aks
-      image: acrdvpsplatformdev.azurecr.io/devops-platform-image:v0.0.5
+      image: mcr.microsoft.com/azure-cli:2.48.1
       command:
         - sleep
       args:
