@@ -29,6 +29,9 @@ spec:
       image: mcr.microsoft.com/azure-cli:2.48.1
       command:
         - sleep
+      env:
+      - name: AZURE_CONFIG_DIR
+        value: "/tmp/.azure"
       args:
         - infinity
   imagePullSecrets:
