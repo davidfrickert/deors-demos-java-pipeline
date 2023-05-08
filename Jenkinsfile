@@ -26,15 +26,9 @@ spec:
         runAsUser: 0
         privileged: true
     - name: aks
-      image: mcr.microsoft.com/azure-cli:2.48.1
+      image: lsnljavaworkshop.azurecr.io/azure-cli-aks:2.48.1
       command:
         - sleep
-      env:
-      - name: AZURE_CONFIG_DIR
-        value: /tmp/.azure
-      - name: HOME
-        value: /tmp
-      workingDir: /tmp
       args:
         - infinity
   imagePullSecrets:
