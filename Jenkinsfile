@@ -32,6 +32,7 @@ spec:
       env:
       - name: AZURE_CONFIG_DIR
         value: "/tmp/.azure"
+      workingDir: /tmp
       args:
         - infinity
   imagePullSecrets:
