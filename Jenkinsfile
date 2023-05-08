@@ -31,7 +31,9 @@ spec:
         - sleep
       env:
       - name: AZURE_CONFIG_DIR
-        value: "/tmp/.azure"
+        value: /tmp/.azure
+      - name: HOME
+        value: /tmp
       workingDir: /tmp
       args:
         - infinity
