@@ -31,10 +31,9 @@ spec:
         - sleep
       args:
         - infinity
-      securityContext:
-        runAsNonRoot: true
-        runAsUser: 1000
-        runAsGroup: 1000
+      env:
+      - name: HOME
+        value: "/home/user"
   imagePullPolicy: Always
   imagePullSecrets:
     - name: master-acr-credentials
