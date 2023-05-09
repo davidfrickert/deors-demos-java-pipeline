@@ -31,6 +31,7 @@ spec:
         - sleep
       args:
         - infinity
+  imagePullPolicy: Always
   imagePullSecrets:
     - name: master-acr-credentials
 '''
