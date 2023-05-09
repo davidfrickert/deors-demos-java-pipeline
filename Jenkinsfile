@@ -32,8 +32,9 @@ spec:
       args:
         - infinity
       securityContext:
+        runAsNonRoot: true
         runAsUser: 1000
-        allowPrivilegeEscalation: false
+        runAsGroup: 1000
   imagePullPolicy: Always
   imagePullSecrets:
     - name: master-acr-credentials
