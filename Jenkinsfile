@@ -109,6 +109,7 @@ spec:
             }
         }
 
+/*
         stage('Software composition analysis') {
             steps {
                 echo '-=- run software composition analysis -=-'
@@ -127,7 +128,7 @@ spec:
                 }
             }
         }
-
+*/
         stage('Package') {
             steps {
                 echo '-=- packaging project -=-'
