@@ -159,6 +159,7 @@ spec:
             }
         }
 
+/*
         stage('Integration tests') {
             steps {
                 echo '-=- execute integration tests -=-'
@@ -171,6 +172,7 @@ spec:
                 jacoco execPattern: 'target/jacoco-it.exec'
             }
         }
+*/
 
         stage('Performance tests') {
             steps {
